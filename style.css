@@ -1,0 +1,216 @@
+.top-container {
+    width: 95vw;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    background-color: rgb(19, 18, 18);
+    align-items: center;
+    position: fixed;
+  }
+  *{
+    background-color: black;
+  }
+  
+  .search-container {
+    width: 40%;
+    display: flex;
+    color: white;
+    width: 50vw;
+    align-items: center;
+  }
+  input {
+    width: 50vw !important;
+    height: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-left: 15px;
+  }
+  
+  .search-container button {
+    width: 60px;
+    color: white;
+    background: #303030;
+    text-align: center;
+    padding-bottom: 5px;
+    border: none;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  .top-container-2 {
+    display: flex;
+    align-items: center;
+  }
+  .mic-image {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+  }
+  .top-container-3 {
+    /* background-color: black; */
+    width: 20%;
+    display: flex;
+  }
+  .top-container-3 button {
+    padding: 2px 10px;
+    background-color: black;
+    border: none;
+  }
+  .side-container {
+    width: 20vw;
+    background-color: black;
+    /* color:white; */
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:10vh;
+    overflow-y: scroll;
+  }
+  .side-container img {
+    /* border:2px solid red; */
+    padding-bottom: 2px;
+  }
+  .home-button {
+    border: none;
+    background-color: black !important;
+  }
+  .side-container img button {
+    border: none;
+  }
+  .side-image {
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+  .middle-container {
+    display: flex;
+    padding: 20px;
+  }
+  /* .items{
+    width:500px;
+    height:125px;
+    overflow: auto;
+    margin-top:5px;
+    border-radius:15px;
+    background-color: black;
+    color:white;
+    font-size:12px;
+    margin:20px;
+    /* overflow-wrap: normal; */
+  
+  /* border:2px solid red; */
+  
+  #items {
+    margin-right: 500px !important;
+  }
+  .maincontainer-button {
+    width: 70px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+  }
+  .main-container {
+    margin-left: 30px;
+    margin-top: 0px;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+  .maincontainer button {
+    width: 60px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+  }
+  
+  .card-container {
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .channel-logo {
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  .card-description {
+    display: flex;
+    /* border:2px solid red; */
+    width: 300px;
+    gap: 10px;
+  }
+  .channel-name {
+    margin-top: -25px;
+  }
+  
+  .grey-text {
+    color: grey;
+    margin: 0px;
+    /* border:2px solid red; */
+  }
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    /* border: 2px solid red; */
+    width:80vw;
+    margin-left:20vw;
+    position:fixed;
+    top:10vh;
+    overflow-y: scroll;
+  }
+  
+  .accordian-1 {
+    height: 20px !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+  .accordian-2 {
+    /* border:2px solid red !important; */
+    width: 94%;
+  }
+  .accordian-3 {
+    background-color: black !important;
+    color: white !important;
+  }
+  .accordion-button1 {
+    width: 94%;
+    height: 30px;
+  }
+  
+  .accordian-body {
+    background-color: dark !important;
+  }
+  
+  .home-button1 {
+    width: 94% !important;
+  }
+  .home-button2 {
+    width: 94% !important;
+    margin-top: 20px;
+  }
+  .image{
+    /* border: 2px solid red; */
+    margin:10px;
+    /* width:100px; */
+  }
+  
+  .video-container:hover{
+    transform: scale(1.05);
+  }
+  
