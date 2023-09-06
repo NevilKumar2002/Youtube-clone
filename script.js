@@ -1,7 +1,7 @@
 // const apiKey="AIzaSyDf3hMcYKUDpQLFhwQhPhBKUuxSBhXVlts";
 // const apiKey="AIzaSyDvo2p4xMEI3GC-PWH02_0OAIN1h88k4rE";
-let apiKey="AIzaSyDf3hMcYKUDpQLFhwQhPhBKUuxSBhXVlts";
-// const apiKey="AIzaSyDVpEd_CcKpRybZzAkgYQn8CU65_UTmSdM";
+// let apiKey="AIzaSyDf3hMcYKUDpQLFhwQhPhBKUuxSBhXVlts";
+const apiKey="AIzaSyDVpEd_CcKpRybZzAkgYQn8CU65_UTmSdM";
 const baseUrl="https://www.googleapis.com/youtube/v3";
 
 const searchInput=document.getElementById("search-input");
@@ -68,8 +68,9 @@ async function fetchChannelLogo(channelId)
 }
 function navigateVideoDetails(videoId)
 {
-  document.cookie = `id=${videoId}; path=/index.html/play-video.html`;
-  window.location.href="http://127.0.0.1:5500/play-video.html";
+  document.cookie = `id=${videoId}; path=/play-video.html`;
+  // window.location.href="http://127.0.0.1:5500/play-video.html";
+  window.location.href="http://127.0.0.1:5501/play-video.html";
 }
 
 
@@ -89,7 +90,7 @@ function displayVideosonUI(videoList){
      
      
       <div class="title-container">
-        <p class="p-0 m-0"><strong>${video.snippet.title}.</strong></p>
+        <p class="p-0 m-0"><strong class="text-white">${video.snippet.title}.</strong></p>
         <p class="channel-name grey-text">${video.snippet.channelTitle}</p>
         <p class="grey-text"> ${video.statistics.viewCount} views  ${calculatePublishTime(video.snippet.publishTime)}</p>
       </div>
@@ -120,7 +121,7 @@ async function fetchsearchResults(searchString)
 {
     // const SearchString="Rahul Gandhi";
 
-    const endpoint = `${baseUrl}/search?key=${apiKey}&q=${searchString}&part=snippet&maxResults=5`;
+    const endpoint = `${baseUrl}/search?key=${apiKey}&q=${searchString}&part=snippet&maxResults=50`;
    try{
     const response= await fetch(endpoint);
     const result=await response.json();

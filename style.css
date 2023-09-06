@@ -1,15 +1,23 @@
 .top-container {
     width: 95vw;
     display: flex;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     justify-content: space-between;
-    background-color: rgb(19, 18, 18);
+    /* background-color: rgb(19, 18, 18); */
     align-items: center;
     position: fixed;
+    margin-left:30px;
+    /* height:100px; */
+    
+
+  }
+  hr{
+    background-color:white;
   }
   *{
     background-color: black;
   }
+ 
   
   .search-container {
     width: 40%;
@@ -122,8 +130,12 @@
     margin-left: 30px;
     margin-top: 0px;
     overflow: auto;
+    position:fixed;
+    top:10vh;
+    width:80vw;
     white-space: nowrap;
     overflow-x: scroll;
+    border:2px solid red;
   }
   .maincontainer button {
     width: 60px;
@@ -133,11 +145,19 @@
   }
   
   .card-container {
-    margin: 10px;
+    margin-top: 120px;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
+   
+
+    /* position:absolute;
+    top:20vh; */
+    border:2px solid red;
+    overflow-y: scroll;
+
   }
+ 
   .channel-logo {
     width: 50px;
     height: 60px;
@@ -166,9 +186,9 @@
     /* border: 2px solid red; */
     width:80vw;
     margin-left:20vw;
-    position:fixed;
+    /* position:fixed; */
     top:10vh;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
   
   .accordian-1 {
